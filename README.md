@@ -9,6 +9,7 @@ React Context API: For state management across the app.
 Sass: For enhanced CSS with variables, nested rules, and more.
 Styled Components: For styling React components with tagged template literals.
 React Hooks: Including useState, useEffect, and custom hooks for managing state and side effects.
+
 User Experience
 
 Authentication: Users can easily sign up and log in using their email/password or Google account.
