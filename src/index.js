@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { CategoriesProvider } from './contexts/categories-context';
+import { BasketProvider } from './contexts/basket-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <CategoriesProvider>
+        <BasketProvider>
+          <App />
+        </BasketProvider>
+      </CategoriesProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
